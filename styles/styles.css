@@ -13,7 +13,6 @@ body {
   --primary-text-color: #070707;
   --secondary-text-color: #6a737d9c;
   --icon-color: #6a737d;
-  --list-icon: url('../assets/pictures/switchers/small-darth-vader-Helmet.svg');
   --border-color: #ff9a0045;
   --text-decoration-color: #FF9559;
 }
@@ -93,7 +92,6 @@ body {
 .contact-info__header {
   color: var(--primary-text-color);
   margin-bottom: 15px;
-  text-decoration-color: var(--text-decoration-color);
 }
 
 .contact-info__sub-header {
@@ -126,6 +124,12 @@ body {
   width: 100%;
   height: 48px;
   line-height: 48px;
+}
+
+.contact-info__item:hover {
+  .contact-info__item-icon path {
+    fill: #126FE0;
+  }
 }
 
 .contact-info__item:not(:last-child) {
@@ -203,10 +207,14 @@ body {
 }
 
 .switchers {
-  list-style-image: var(--list-icon);
+  /* list-style-image: var(--list-icon); */
   padding-left: 10px;
   height: 30px;
   line-height: 30px;
+}
+.switchers:hover {
+  color: #126FE0;
+  list-style-color: #126FE0;
 }
 
 .experiences {
@@ -303,4 +311,27 @@ body {
 
 .additional-info__languages-item {
   color: var(--primary-text-color);
+}
+
+.underline_hover_eff {
+  position: relative;
+  display: inline-block;
+}
+
+.underline_hover_eff::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(to right, #DD3E34, #126FE0);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.5s ease-out;
+}
+
+.underline_hover_eff:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
