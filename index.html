@@ -11,7 +11,7 @@
     </head>
     <body>
         <main>
-            <div class="resume">
+            <div class="resume light-mode">
                 <div class="container">
                     <div class="resume__block">
                         <div class="contact_info_container fh">
@@ -24,14 +24,24 @@
                             </div>
 
                             <div class="contact-info__block--conteiner">
-                                <div class="contact-info--conteiner">
+                                <div>
+                                    <button class="onclick-btn onclick-btn--light" onclick="lightMode()"></button>
+
+                                    <button class="onclick-btn onclick-btn--dark" onclick="darkMode()"></button>
+                                </div>
+                                <div>
                                     <h1 class="contact-info__header">Anastasiia Hombalevska</h1>
                                     <h3 class="contact-info__sub-header">Full-Stack Developer</h3>
                                 </div>
 
                                 <div class="contact-info__block">
                                     <div>
-                                        <a href="" rel="author" class="contact-info__item">
+                                        <a
+                                          href="https://maps.app.goo.gl/XUePyXfCYXGGW4zeA"
+                                          rel="author"
+                                          class="contact-info__item"
+                                          target="_blank"
+                                          >
                                             <div class="contact-info__item-icon-wrapper">
                                                 <svg
                                                     class="contact-info__item-icon"
@@ -43,13 +53,14 @@
                                                     />
                                                 </svg>
                                             </div>
-                                            <span>Kyiv, Ukraine</span>
+                                            <span class="underline_hover_eff">Kyiv, Ukraine</span>
                                         </a>
 
                                         <a
                                           href="https://www.linkedin.com/in/anastasiia-hombalevska/"
                                           rel="author"
                                           class="contact-info__item"
+                                          target="_blank"
                                         >
                                             <div class="contact-info__item-icon-wrapper">
                                                 <svg 
@@ -62,33 +73,36 @@
                                                     />
                                                 </svg>
                                             </div>
-                                            <span>Linkedin</span>
+                                            <span class="underline_hover_eff">Linkedin</span>
                                         </a>
                                     </div>
 
                                     <div>
                                         <a
-                                          href="http://@vasilisandreeva"
+                                          href="tg://@vasilisandreeva"
                                           rel="author"
                                           class="contact-info__item"
+                                          target="_blank"
                                         >
                                             <div class="contact-info__item-icon-wrapper">
                                                 <svg
                                                     class="contact-info__item-icon"
                                                     xmlns="http://www.w3.org/2000/svg" 
-                                                    viewBox="0 0 496 512">
+                                                    viewBox="0 0 496 512"
+                                                >
                                                     <path
                                                         d="M248 8C111 8 0 119 0 256S111 504 248 504 496 393 496 256 385 8 248 8zM363 176.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7 .2-.7 .3-3.1-1.2-4.4s-3.6-.8-5.1-.5q-3.3 .7-104.6 69.1-14.8 10.2-26.9 9.9c-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3q.8-6.7 18.5-13.7 108.4-47.2 144.6-62.3c68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6 .5 9.6 2.9a10.5 10.5 0 0 1 3.5 6.7A43.8 43.8 0 0 1 363 176.7z"
                                                     />
                                                 </svg>
                                             </div>
-                                            <span>Telegram</span>
+                                            <span class="underline_hover_eff">Telegram</span>
                                         </a>
 
                                         <a
                                           href="https://www.instagram.com/vasilisandreeva?igsh=MXZsNXlkeW1oeGpnag=="
                                           rel="author"
                                           class="contact-info__item"
+                                          target="_blank"
                                         >
                                             <div class="contact-info__item-icon-wrapper">
                                                 <svg
@@ -100,7 +114,7 @@
                                                     />
                                                 </svg>
                                             </div>
-                                            <span>Instagram</span>
+                                            <span class="underline_hover_eff">Instagram</span>
                                         </a>
                                     </div>
                                 </div>
@@ -112,7 +126,7 @@
                                 <svg
                                     class="intro__icon"
                                     xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 512 512"
+                                  viewBox="0 0 512 512"
                                 >
                                     <path
                                         d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7
@@ -146,8 +160,7 @@
                                 <li class="switchers">JavaScript (ES2015–2019)</li>
                                 <li class="switchers">Basic React</li>
                                 <li class="switchers">Basic Typescript</li>
-                                <li class="switchers">Git/GitHub, VS Code, WebStorm, Chrome Developer Tools (incl. React), NPM</li>
-                                <li class="switchers">Algorithms: Solved 105 katas on CodeWars</li>
+                                <li class="switchers">Git/GitHub</li>
                                 <li class="switchers">Basic OOP understanding</li>
                                 <li class="switchers">Photoshop, Figma</li>
                             </ul>
@@ -166,11 +179,11 @@
                                         <span class="experiences__company-project-role">Front-end Developer</span>
                                         <h3 class="experiences__company-project-name">"Team Chalange" project</h3>
                                         <ul class="experiences__company-project-responsibilities">
-                                            <li>Created Dynamic Interfaces with React</li>
-                                            <li>Utilized TypeScript</li>
-                                            <li>Styled with Tailwind CSS</li>
-                                            <li>Worked with Developers</li>
-                                            <li>Communication with Designers<br>and Backend Developers</li>
+                                            <li class="experience_switchers">Created Dynamic Interfaces with React</li>
+                                            <li class="experience_switchers">Utilized TypeScript</li>
+                                            <li class="experience_switchers">Styled with Tailwind CSS</li>
+                                            <li class="experience_switchers">Worked with Developers</li>
+                                            <li class="experience_switchers">Communication with Designers<br>and Backend Developers</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -207,5 +220,6 @@
                 </div>
             </div>
         </main>
+        <script type="module" src="./color-theme.js"></script>
     </body>
 </html>
