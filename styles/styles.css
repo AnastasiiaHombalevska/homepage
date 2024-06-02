@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Reddit Mono", monospace;
+  font-weight: 400px;
+  font-style: normal;
+  line-height: 1.5;
+
+  --primary-text-color: #070707;
+  --secondary-text-color: #6a737d9c;
+  --icon-color: #6a737d;
+  --list-icon: url('../assets/pictures/switchers/small-darth-vader-Helmet.svg');
+  --border-color: #ff9a0045;
+  --text-decoration-color: #FF9559;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 900px;
+}
+
+.fh {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.fv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.resume {
+  margin: 50px auto;
+  border: 3px solid #f5f5f5;
+  border-image: linear-gradient(to right, #DD3E34, #126FE0) 3;
+  box-shadow: 1px 1px 7px 7px #f5f5f5;
+  padding: 30px 0;
+  max-width: 900px;
+}
+
+.resume__block {
+  padding-bottom: 30px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 576px) {
+  .main-info,
+  .contact_info_container {
+    flex-direction: column;
+  }
+
+  .contact_info_container {
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+  }
+
+  .contact-info__block:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .experiences {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .skills__header--tech {
+    margin: 0;
+    padding-top: 30px;
+  }
+}
+
+.main-info {
+  margin-top: 20px;
+}
+
+.contact-info__header,
+.contact-info__sub-header {
+  text-align: center;
+}
+
+.contact-info--conteiner {
+  padding: 10px 0;
+}
+
+.contact-info__header {
+  color: var(--primary-text-color);
+  margin-bottom: 15px;
+  text-decoration-color: var(--text-decoration-color);
+}
+
+.contact-info__sub-header {
+  color: var(--primary-text-color);
+  margin-bottom: 15x;
+}
+
+.contact-info__block--conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contact-info__block {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.contact-info__block--center {
+  justify-content: start;
+}
+
+.contact-info__item {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+}
+
+.contact-info__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contact-info__item-icon-wrapper {
+  margin-right: 10px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info__item-icon path {
+  fill: var(--primary-text-color);
+}
+
+.contact-info__item-icon {
+  height: 1.6rem;
+  vertical-align: text-bottom;
+}
+
+.contact-info__avatar {
+  width: 350px;
+  object-fit: cover;
+  border: 3px solid;
+  border-image: linear-gradient(to right, #DD3E34, #126FE0) 3;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.intro__icon-wrapper {
+  margin-right: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.intro__icon {
+  height: 1.1428rem;
+  vertical-align: text-bottom;
+}
+
+.intro__icon path {
+  fill: #126FE0;
+}
+
+.intro_text {
+  color: var(--primary-text-color);
+  text-align: justify;
+}
+
+.skills {
+  padding-left: 30px;
+}
+
+.skills__header {
+  color: var(--primary-text-color);
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.skills__header--tech {
+  margin-top: 15px;
+}
+
+.skills__text {
+  color: var(--primary-text-color);
+  text-align: justify;
+}
+
+.switchers {
+  list-style-image: var(--list-icon);
+  padding-left: 10px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.experiences {
+  flex: 1 1 50%;
+}
+
+.experiences__header {
+  color: var(--primary-text-color);
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.experiences__company-header-durability {
+  color: var(--secondary-text-color);
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.experiences__company-header-name {
+  color: var(--primary-text-color);
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.experiences__company-project {
+  /* margin-left: 15px;
+  margin-bottom: 25px; */
+}
+
+.experiences__company-project-role {
+  color: var(--secondary-text-color);
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.experiences__company-project-name {
+  color: var(--primary-text-color);
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.experiences__company-project-responsibilities {
+  color: var(--primary-text-color);
+  padding-left: 20px;
+}
+
+.additional-info {
+  flex: 1 1 40%;
+  padding: 5px;
+  border: 3px solid;
+  border-image: linear-gradient(to right, #DD3E34, #126FE0) 3;
+}
+
+.additional-info__education {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.additional-info__education-header {
+  color: var(--primary-text-color);
+  text-align: left;
+}
+
+.additional-info__education-university-durability {
+  color: var(--secondary-text-color);
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.additional-info__education-university-speciality {
+  color: var(--primary-text-color);
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.additional-info__education-university-name {
+  color: var(--primary-text-color);
+}
+
+.additional-info__languages {
+  margin-bottom: 20px;
+}
+
+.additional-info__languages-header {
+  color: var(--primary-text-color);
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.additional-info__languages-item {
+  color: var(--primary-text-color);
+}
